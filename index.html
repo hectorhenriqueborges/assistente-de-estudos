@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistente de Estudos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Assistente de Estudos</h1>
+    <p class="subtitulo">Cole um texto e receba um resumo ou um quiz.</p>
+
+    <label for="texto">Seu texto</label>
+    <textarea id="texto" rows="10" placeholder="Cole aqui o texto que você quer estudar..."></textarea>
+
+    <label for="nivel">Nível do resumo</label>
+    <select id="nivel">
+      <option value="curto">Curto</option>
+      <option value="medio" selected>Médio</option>
+      <option value="detalhado">Detalhado</option>
+    </select>
+
+    <div class="botoes">
+      <button id="btn-resumir">Resumir</button>
+      <button id="btn-quiz">Criar quiz</button>
+    </div>
+
+    <section id="resultado"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
